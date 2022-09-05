@@ -10,19 +10,24 @@ Project 4 - Random Quote Generator
 /*** 
  * `quotes` array 
 ***/
-
+let quotes = []; 
 
 
 /***
  * `getRandomQuote` function
 ***/
+function getRandomQuote() {
 
+
+}
 
 
 /***
  * `printQuote` function
 ***/
-
+function printQuote() {
+  
+}
 
 
 /***
