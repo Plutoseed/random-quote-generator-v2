@@ -21,7 +21,7 @@ let quotes = [{"Knowledge is power... and pain.": "Wraith", "Apex": "Source", "0
  * `getRandomQuote` function
 ***/
 function getRandomQuote() {
-  let ranNum =  Math.floor(Math.random() * quotes.length) + 1;
+  let ranNum =  Math.floor(Math.random() * quotes.length);
   return quotes[ranNum];
 }
 
@@ -29,14 +29,11 @@ function getRandomQuote() {
 /***
  * `printQuote` function
 ***/
-function printQuote() {
-  function printQuote() {
+ function printQuote() {
     let myq = getRandomQuote();
-  let displayq = document.querySelector('p').innerHTML = `<p class="quote"> ${myq} </p>
-  <p class="source"> ${} </p>`;
+  let displayq = `<p class="quote"> ${myq} </p>`;
+  return displayq; 
   }
-  
-}
 
 
 /***
