@@ -12,7 +12,9 @@ Project 4 - Random Quote Generator
 ***/
 let quotes = [{
   quote : 'Hard times create strong men, strong men create good times, good times create weak men, weak men create hard times',
-  source : 'G. Michael Hopf' 
+  source : 'G. Michael Hopf',
+  citation: 'Those Who Remain',
+  year: '12/06/16'
 },
 {
   quote : 'The ability to learn faster than your competitors may be the only sustainable competitive advantage',
@@ -47,8 +49,15 @@ function getRandomQuote() {
 ***/
  function printQuote() {
     let myq = getRandomQuote();
-  let displayQ = `<p class="quote"> ${myq.quote} </p>`;
+  let displayQ = `
+  <p class="quote"> ${myq.quote} </p> 
+  <p class="source"> ${myq.source} </p>
+  `;
   return displayQ; 
+  } ;
+
+  if (printQuote() === quotes.citation) {
+    
   }
 
 
