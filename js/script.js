@@ -10,11 +10,27 @@ Project 4 - Random Quote Generator
 /*** 
  * `quotes` array 
 ***/
-let quotes = [{"Knowledge is power... and pain.": "Wraith", "Apex": "Source", "02/28/2022": "date"}, 
-{"Start before you're ready. Don't prepare, begin": "Mel Robbins"}, 
-{"There's not a single winner on Earth that took it easy": "Gary Vee"}, 
-{"There is only one thing we say to death: Not today": "Syrio Forel"}, 
-{"Always prefer the plain direct word to the long, vague one. Don't implement promises, but keep them.": "C.S. Lewis"}];
+let quotes = [{
+  quote : 'Hard times create strong men, strong men create good times, good times create weak men, weak men create hard times',
+  source : 'G. Michael Hopf' 
+},
+{
+  quote : 'The ability to learn faster than your competitors may be the only sustainable competitive advantage',
+  source : 'Arie de Geus', 
+},
+{
+quote : 'Setting a goal is not the main thing. It is deciding how you will go about achieving it and staying with that plan.', 
+source : 'Tom Landry', 
+},
+{
+  quote : 'There is no coincidence that stability brings success, and success brings stability.', 
+  source : 'Robert Green', 
+  },
+  {
+    quote : 'A man without self-control is like a city broken into and left without walls.', 
+    source : 'Bible', 
+    },
+];
 
 
 /***
@@ -31,8 +47,8 @@ function getRandomQuote() {
 ***/
  function printQuote() {
     let myq = getRandomQuote();
-  let displayq = `<p class="quote"> ${myq} </p>`;
-  return displayq; 
+  let displayQ = `<p class="quote"> ${myq.quote} </p>`;
+  return displayQ; 
   }
 
 
