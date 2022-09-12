@@ -31,8 +31,8 @@ function getRandomQuote() {
 ***/
  function printQuote() {
     let myq = getRandomQuote();
-  let displayq = `<p class="quote"> ${myq} </p>`;
-  return displayq; 
+    let displayq =  quotes.myq;
+    return displayq;   
   }
 
 
