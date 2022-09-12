@@ -49,9 +49,8 @@ function getRandomQuote() {
 ***/
  function printQuote() {
     let myq = getRandomQuote();
-<<<<<<< HEAD
-    let displayq =  quotes.myq;
-    return displayq;   
+
+ 
 =======
   let displayQ = `
   <p class="quote"> ${myq.quote} </p> 
@@ -62,7 +61,6 @@ function getRandomQuote() {
 
   if (printQuote() === quotes.citation) {
     
->>>>>>> 8970206035d07eaf335ab7ae8517d8787d54f3a0
   }
 
 
