@@ -40,7 +40,9 @@ source : 'Tom Landry',
  * THIS FUNCTION RETURNS A RANDOM OBJECT WHICH HOUSES QUOTES! 
 ***/
 function getRandomQuote() {
+  //We declared a variable that holds a method that will store a random object from the 'quotes' array!
   let ranNum =  Math.floor(Math.random() * quotes.length);
+  //Below we are returning the random object chosen. 
   return quotes[ranNum];
 }
 
@@ -49,17 +51,21 @@ function getRandomQuote() {
  * THIS FUNCTION CALLS THE GET RANDOM QUOTE FUNCTION AND DISPLAYS IT ON THE SCREEN VIA HTML
 ***/
  function printQuote() {
+  // This variable holds the getRandomQuote function above, it will call the function and store the outcome. 
     let myq = getRandomQuote();
+    // Here the displayQ variable will access the HTML and create a new string that will display a given quote and the source a long with it. 
   let displayQ = `
   <p class="quote"> ${myq.quote} </p> 
   <p class="source"> ${myq.source}`;
+    // Some of the quotes may have a citation or a given year the quote was written, here I've created if statements that basically states if a given quote has a citation or year then we concatenate that name to value pair into our string. 
+    // This will also display with the quote via HTML.
   if (myq.citation) {
     displayQ += ` <span class='citation'> ${myq.citation} </span>`;
 
   }
   if (myq.year) {
-    displayQ += ` <span class='year'> ${myq.year} </span>`;
-  } displayQ += `</p>`;
+    displayQ += ` <span class='year'> ${myq.year} </span>` + `</p>`;
+  }
   return document.getElementById('quote-box').innerHTML = `${displayQ}`; 
   }  ;
 
